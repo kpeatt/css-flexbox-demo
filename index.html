@@ -422,6 +422,60 @@
   -webkit-flex-order: 1;  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Example 7 */
+
+#example-7 .spacebetween-example {
+  width: 90%;
+  background-color: #FCF8E3;
+  padding: 10px;
+  border: 1px solid #EEDC7D;
+
+  /* Old Syntax */
+  display: -webkit-box;
+  display: -moz-box;
+
+  /* New Syntax */
+  display: -webkit-flexbox;
+  
+  /* New Syntax */
+  -webkit-flex-pack: justify;
+}
+
+#example-7 .spacebetween-example > div {
+  justify-content: space-between;
+}
+
+#example-7 .spacearound-example > div {
+  justify-content: space-around;
+}
+
 </style>
 
 
@@ -682,6 +736,31 @@
   <p>The default value for <code>flex-order</code> is <code>0</code>.</p>
 
 </article> <!-- #example-6 -->
+
+
+<article class="example" id="example-7">
+
+  <header>
+    <h1>Example 6 - Justify Content</h1>
+    <p>We can specify whether we want to have a standard amount of space around each element or between each element using <code>justify-content</code></p>
+  </header>
+
+  <section class="spacebetween-example">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </section>
+  
+  <section class="spacearound-example">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </section>
+
+  <p>The default value for <code>justify-content</code> is <code>space-between</code>.</p>
+
+</article> <!-- #example-7 -->
+
 
 
 
